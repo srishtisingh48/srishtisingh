@@ -169,12 +169,12 @@ footer {
 /* Base styles for mobile first */
 #welcome-container {
     padding: 20px;
-    text-align: center; /* Center align text */
+    text-align: center; 
 }
 
 #welcome-container h2 {
-    font-size: 1.2em; /* Adjust font size for readability */
-    margin: 10px 0; /* Add spacing between headings */
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
 /* Adjustments for tablets and larger screens */
