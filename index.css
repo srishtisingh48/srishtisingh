@@ -207,7 +207,7 @@ p {
 
 .off-the-clock-list li::before {
     content: "•";
-    color: black;
+    color: #fce4ec;
     font-weight: bold;
     display: inline-block;
     width: 1em;
