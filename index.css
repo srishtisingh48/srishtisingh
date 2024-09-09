@@ -11,6 +11,34 @@ body {
     line-height: 1.6;
 }
 
+/* ABOUT SECTION */
+/* about me summary */
+h2 {
+    font-size: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+/* for links */
+a {
+    color: #d81b60;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* pink border*/
+.container {
+    border: 2px solid #f48fb1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+
+
 header {
     background-color: #333;
     color: #fff;
@@ -28,36 +56,19 @@ header {
 }
 
 .navbar a {
-    color: #d81b60;
+    color: #fce4ec;
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
 }
 
 .navbar a:hover {
-    color: black;
+    color: #d81b60;
 }
 
 section {
     padding: 40px 20px;
     text-align: center;
-}
-
-/* about me summary */
-h2 {
-    font-size: 20px;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 20px;
-}
-
-a {
-    color: #d81b60;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
 }
 
 p {
@@ -84,10 +95,4 @@ footer {
     bottom: 0;
 }
 
-/* pink border */
-.container {
-    border: 2px solid #f48fb1; /* Light pink border */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    background-color: #fff; /* White background for the content area */
-}
+
