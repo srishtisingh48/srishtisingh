@@ -124,6 +124,14 @@ a:hover {
     margin: 0;
 }
 
+.timeline-details {
+    display: none; /* Hide all details by default */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+}
+
 .timeline-details h2 {
     margin-bottom: 0px;
 }
