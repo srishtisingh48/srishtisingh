@@ -204,6 +204,40 @@ p {
     }
 }
 
+/* Base styles for mobile first */
+#clock-container {
+    padding: 20px;
+    text-align: center; 
+}
+
+#clock-container h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Adjustments for tablets and larger screens */
+@media (min-width: 768px) {
+    #clock-container {
+        padding: 30px;
+    }
+
+    #clock-container h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    #clock-container {
+        padding: 20px;
+    }
+
+    #clock-container h2 {
+        font-size: 1.2em; 
+        line-height: 1.4;
+        margin: 10px 0;
+    }
+}
+
 
 footer {
     background-color: #333;
