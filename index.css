@@ -206,7 +206,7 @@ p {
 
 /* Base styles for mobile first */
 #clock-container {
-    padding: 20px;
+    padding: 0px;
     text-align: center; 
 }
 
