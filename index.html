@@ -20,6 +20,7 @@
         </nav>
     </header>
 
+    <!-- the about aka who am i section -->
     <section id="about">
         <h1>👩‍💻 WHO AM I? 👩‍💻</h1>
         <div class="container">
@@ -33,32 +34,39 @@
         </div>
     </section>
 
+    <!-- the timeline aka code diaries section -->
     <section id="timeline">
         <h1>💡 CODE DIARIES 💡</h1>
-        <div class="timeline-container">
-            <div class="timeline-item">
+        <div class="timeline">
+            <div class="timeline-item" onclick="showDetails('event1')">
                 <div class="timeline-content">
                     <h2>2024</h2>
-                    <p>Started my journey at the University of Washington studying Computer Science.</p>
+                    <p>Started my journey at the University of Washington.</p>
                 </div>
-                <div class="timeline-arrow"></div>
+                <div id="event1" class="timeline-details">
+                    <p>Details about 2024 event.</p>
+                </div>
             </div>
-            <div class="timeline-item">
+            <div class="timeline-item" onclick="showDetails('event2')">
                 <div class="timeline-content">
                     <h2>Summer 2024</h2>
-                    <p>Interned at Quadrant Technologies and developed Vamsa.</p>
+                    <p>Interned at Quadrant Technologies.</p>
                 </div>
-                <div class="timeline-arrow"></div>
+                <div id="event2" class="timeline-details">
+                    <p>Details about Summer 2024 event.</p>
+                </div>
             </div>
-            <div class="timeline-item">
+            <div class="timeline-item" onclick="showDetails('event3')">
                 <div class="timeline-content">
                     <h2>Fall 2024</h2>
-                    <p>Participated in various hackathons and coding events.</p>
+                    <p>Participated in hackathons.</p>
+                </div>
+                <div id="event3" class="timeline-details">
+                    <p>Details about Fall 2024 event.</p>
                 </div>
             </div>
-            <!-- Add more timeline items as needed -->
         </div>
-
+        
         <div class="project-card">
             <h3>Project 1</h3>
             <p>Description of Project 1.</p>
