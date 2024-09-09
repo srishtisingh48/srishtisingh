@@ -58,8 +58,8 @@ p {
 .project-card {
     background-color: #fff;
     border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px auto;
+    padding: 60px;
+    margin: 60px auto;
     max-width: 400px;
     text-align: left;
 }
