@@ -151,8 +151,6 @@ a:hover {
     display: block;
 }
 
-
-
 p {
     font-size: 18px;
     margin-bottom: 0px;
@@ -169,3 +167,32 @@ footer {
 }
 
 
+/* Tablet styles (768px and up) */
+@media (min-width: 768px) {
+    #timeline {
+        width: 80%; /* Centered with fixed width on tablets */
+    }
+
+    .timeline-item {
+        margin: 10px 0;
+    }
+
+    .timeline-date {
+        font-size: 1.5em;
+    }
+}
+
+/* Desktop styles (1024px and up) */
+@media (min-width: 1024px) {
+    #timeline {
+        width: 60%; /* Centered with fixed width on desktops */
+    }
+
+    .timeline-item {
+        margin: 20px 0;
+    }
+
+    .timeline-date {
+        font-size: 1.8em;
+    }
+}

@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Hides and displays information when clicked
+// Hides and displays information when hovered over
 function showDetails(id) {
     var details = document.getElementById(id);
     // Close all details
@@ -19,7 +19,6 @@ function showDetails(id) {
             detail.style.display = 'none';
         }
     });
-    // Toggle the clicked detail
     details.style.display = details.style.display === 'block' ? 'none' : 'block';
 }
 
