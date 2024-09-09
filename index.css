@@ -166,33 +166,34 @@ footer {
     bottom: 0;
 }
 
+/* Base styles for mobile first */
+#welcome-container {
+    padding: 20px;
+    text-align: center; /* Center align text */
+}
 
-/* Tablet styles (768px and up) */
+#welcome-container h2 {
+    font-size: 1.2em; /* Adjust font size for readability */
+    margin: 10px 0; /* Add spacing between headings */
+}
+
+/* Adjustments for tablets and larger screens */
 @media (min-width: 768px) {
-    #timeline {
-        width: 80%; /* Centered with fixed width on tablets */
+    #welcome-container {
+        padding: 30px;
     }
 
-    .timeline-item {
-        margin: 10px 0;
-    }
-
-    .timeline-date {
+    #welcome-container h2 {
         font-size: 1.5em;
     }
 }
 
-/* Desktop styles (1024px and up) */
 @media (min-width: 1024px) {
-    #timeline {
-        width: 60%; /* Centered with fixed width on desktops */
+    #welcome-container {
+        padding: 40px;
     }
 
-    .timeline-item {
-        margin: 20px 0;
-    }
-
-    .timeline-date {
+    #welcome-container h2 {
         font-size: 1.8em;
     }
 }
