@@ -45,9 +45,8 @@ section {
 
 h2 {
     font-size: 15px;
-    margin-right: 40px;
-    margin-left:40px;
-    margin-bottom: 20px;
+    margin-right: 60px;
+    margin-bottom: 60px;
 }
 
 p {
@@ -58,8 +57,8 @@ p {
 .project-card {
     background-color: #fff;
     border: 1px solid #ccc;
-    padding: 60px;
-    margin: 60px auto;
+    padding: 20px;
+    margin: 10px auto;
     max-width: 400px;
     text-align: left;
 }
