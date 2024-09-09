@@ -6,9 +6,9 @@
 
 body {
     font-family: 'Dosis', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #fce4ec;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
 }
 
 .navbar a {
-    color: white;
+    color: #d81b60;
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
@@ -43,11 +43,21 @@ section {
     text-align: center;
 }
 
+/* about me summary */
 h2 {
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 100px;
     margin-left: 100px;
     margin-bottom: 20px;
+}
+
+a {
+    color: #d81b60;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
 }
 
 p {
@@ -72,4 +82,12 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* pink border */
+.container {
+    border: 2px solid #f48fb1; /* Light pink border */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background for the content area */
 }
