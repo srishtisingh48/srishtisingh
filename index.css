@@ -124,6 +124,10 @@ a:hover {
     margin: 0;
 }
 
+.timeline-details h2 {
+    margin-bottom: -10px;
+}
+
 .interactive-timeline .timeline-details {
     display: none;
     background-color: #fce4ec;
