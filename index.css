@@ -94,6 +94,7 @@ a:hover {
     border-left: 2px solid #f48fb1;
 }
 
+/* hide by making same color as background */
 .timeline-item::after {
     content: '';
     position: absolute;
@@ -133,6 +134,7 @@ a:hover {
     margin-top: 10px;
 }
 
+/* necessary for showDetails() to work */
 .timeline-item:hover .timeline-details {
     display: block;
 }
@@ -142,15 +144,6 @@ a:hover {
 p {
     font-size: 18px;
     margin-bottom: 20px;
-}
-
-.project-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 400px;
-    text-align: left;
 }
 
 footer {

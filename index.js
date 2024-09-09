@@ -9,8 +9,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Hides and displays information when clicked
 function showDetails(id) {
     var details = document.getElementById(id);
+    // Determines whether to hide or display when block is clicked
     details.style.display = details.style.display === 'block' ? 'none' : 'block';
 }
 
