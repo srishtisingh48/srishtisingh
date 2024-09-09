@@ -12,7 +12,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Hides and displays information when clicked
 function showDetails(id) {
     var details = document.getElementById(id);
-    // Determines whether to hide or display when block is clicked
-    details.style.display = details.style.display === 'block' ? 'none' : 'block';
+    if (details.style.display === 'block') {
+        details.style.display = 'none';
+    } else {
+        // Close all other details
+        var allDetails = document.querySelectorAll('.timeline-details');
+        allDetails.forEach(function(detail) {
+            detail.style.display = 'none';
+        });
+        // Open the clicked detail
+        details.style.display = 'block';
+    }
 }
 
