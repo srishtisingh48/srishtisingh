@@ -1,7 +1,5 @@
 * {
     margin: 0px;
-    margin-right: 20px;
-    margin-left: 20px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -47,8 +45,8 @@ section {
 
 h2 {
     font-size: 15px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
     margin-bottom: 20px;
 }
 
