@@ -65,13 +65,41 @@ a:hover {
 }
 
 /* pink border*/
-.container {
+/* Base styles for mobile first */
+#welcome-container {
     border: 2px dashed #f48fb1;
-    margin-right: 80px;
-    margin-left: 80px;
-    padding: 20px;
     border-radius: 8px;
     background-color: #fff;
+    padding: 20px;
+    text-align: center; 
+}
+
+#welcome-container h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Adjustments for tablets and larger screens */
+@media (min-width: 768px) {
+    #welcome-container {
+        padding: 30px;
+    }
+
+    #welcome-container h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    #welcome-container {
+        padding: 20px;
+    }
+
+    #welcome-container h2 {
+        font-size: 1.2em; 
+        line-height: 1.4;
+        margin: 10px 0;
+    }
 }
 
 /* TIMELINE SECTION */
@@ -166,36 +194,3 @@ footer {
     bottom: 0;
 }
 
-/* Base styles for mobile first */
-#welcome-container {
-    padding: 20px;
-    text-align: center; 
-}
-
-#welcome-container h2 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-/* Adjustments for tablets and larger screens */
-@media (min-width: 768px) {
-    #welcome-container {
-        padding: 30px;
-    }
-
-    #welcome-container h2 {
-        font-size: 1.5em;
-    }
-}
-
-@media (min-width: 1024px) {
-    #welcome-container {
-        padding: 20px;
-    }
-
-    #welcome-container h2 {
-        font-size: 1.2em; 
-        line-height: 1.4;
-        margin: 10px 0;
-    }
-}
