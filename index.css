@@ -124,8 +124,8 @@ a:hover {
     margin: 0;
 }
 
-.timeline-details h2 {
-    margin-bottom: -10px;
+.timeline-details h2 .timeline-details p {
+    margin-bottom: -8px;
 }
 
 .interactive-timeline .timeline-details {
