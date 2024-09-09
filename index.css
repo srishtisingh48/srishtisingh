@@ -194,26 +194,7 @@ p {
     animation: rotateClock 10s linear infinite;
 }
 
-.off-the-clock-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.off-the-clock-list li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.off-the-clock-list li::before {
-    content: "•";
-    color: #fce4ec;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
+/* clock animation */
 @keyframes rotateClock {
     0% {
         transform: rotate(0deg);
