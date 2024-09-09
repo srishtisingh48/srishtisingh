@@ -64,7 +64,7 @@ a:hover {
 
 /* pink border*/
 .container {
-    border: 2px solid #f48fb1;
+    border: 4px groove #f48fb1;
     margin-right: 80px;
     margin-left: 80px;
     padding: 20px;
