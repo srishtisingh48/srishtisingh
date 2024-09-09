@@ -70,7 +70,7 @@ a:hover {
     border: 2px dashed #f48fb1;
     border-radius: 8px;
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
     text-align: center; 
 }
 
@@ -183,6 +183,26 @@ p {
     font-size: 18px;
     margin-bottom: 0px;
 }
+
+.off-the-clock {
+    text-align: center;
+    padding: 20px;
+}
+
+.off-the-clock .clock img {
+    width: 100px;
+    animation: rotateClock 10s linear infinite;
+}
+
+@keyframes rotateClock {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 footer {
     background-color: #333;
