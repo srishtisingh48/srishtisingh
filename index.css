@@ -190,10 +190,12 @@ footer {
 
 @media (min-width: 1024px) {
     #welcome-container {
-        padding: 40px;
+        padding: 20px;
     }
 
     #welcome-container h2 {
-        font-size: 1.8em;
+        font-size: 1.2em; 
+        line-height: 1.4;
+        margin: 10px 0;
     }
 }
