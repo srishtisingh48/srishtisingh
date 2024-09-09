@@ -203,15 +203,18 @@ p {
 .off-the-clock-list li {
     font-size: 1.2em;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.off-the-clock-list .icon {
+    font-size: 1.5em;
+    margin-right: 10px;
 }
 
 .off-the-clock-list li::before {
-    content: "•";
-    color: pink;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+    content: "";
+    display: none;
 }
 
 @keyframes rotateClock {
