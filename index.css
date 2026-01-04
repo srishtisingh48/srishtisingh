@@ -1,251 +1,290 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+:root{
+  --bg: #fce4ec;
+  --text: #333;
+  --header: #333;
+  --navText: #fce4ec;
+  --accent: #d81b60;
+  --accentSoft: #f48fb1;
+  --card: #fff;
+  --card2: #f9f9f9;
+  --shadow: rgba(0,0,0,0.1);
 }
 
-body {
-    font-family: 'Dosis', sans-serif;
-    background-color: #fce4ec;
-    color: #333;
-    line-height: 1.6;
+body.dark{
+  --bg: #0f0f12;
+  --text: #f3f3f3;
+  --header: #14141a;
+  --navText: #f3f3f3;
+  --accent: #ff4fa3;
+  --accentSoft: #ff86c5;
+  --card: #1b1b22;
+  --card2: #232330;
+  --shadow: rgba(0,0,0,0.5);
 }
 
-section {
-    padding: 40px 20px;
-    text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
- h1 {
-    margin-bottom: 10px;
- }
+
+body{
+  font-family: 'Dosis', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+section{
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+/* smooth theme transition */
+body, header, .timeline-content, .timeline-details, #welcome-container, footer, a{
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
 /* NAVIGATION BAR */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+header{
+  background-color: var(--header);
+  color: var(--navText);
+  padding: 10px 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
-.navbar li {
-    margin: 0 20px;
+.navbar li{
+  margin: 0 20px;
 }
 
-.navbar a {
-    color: #fce4ec;
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
+.navbar a{
+  color: var(--navText);
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
-.navbar a:hover {
-    color: #d81b60;
+.navbar a:hover{
+  color: var(--accent);
+}
+
+/* THEME TOGGLE BUTTON (if you added it in nav) */
+.theme-toggle{
+  cursor: pointer;
+  border: 1px solid var(--accentSoft);
+  background: var(--card);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.theme-toggle:hover{
+  transform: translateY(-1px);
 }
 
 /* ABOUT SECTION */
-/* about me summary */
-h2 {
-    font-size: 20px;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 20px;
+h2{
+  font-size: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 20px;
 }
 
-/* for links */
-a {
-    color: #d81b60;
-    text-decoration: none;
+/* links */
+a{
+  color: var(--accent);
+  text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
-}
-
-/* pink border*/
-/* Base styles for mobile first */
-#welcome-container {
-    border: 2px dashed #f48fb1;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 20px;
-    text-align: center; 
+a:hover{
+  text-decoration: underline;
 }
 
-#welcome-container h2 {
-    font-size: 1.2em;
-    margin: 10px 0;
+/* welcome container */
+#welcome-container{
+  border: 2px dashed var(--accentSoft);
+  border-radius: 8px;
+  background-color: var(--card);
+  padding: 20px;
+  text-align: center;
+}
+
+#welcome-container h2{
+  font-size: 1.2em;
+  margin: 10px 0;
 }
 
 /* Adjustments for tablets and larger screens */
-@media (min-width: 768px) {
-    #welcome-container {
-        padding: 30px;
-    }
+@media (min-width: 768px){
+  #welcome-container{
+    padding: 30px;
+  }
 
-    #welcome-container h2 {
-        font-size: 1.5em;
-    }
+  #welcome-container h2{
+    font-size: 1.5em;
+  }
 }
 
-@media (min-width: 1024px) {
-    #welcome-container {
-        padding: 20px;
-    }
+@media (min-width: 1024px){
+  #welcome-container{
+    padding: 20px;
+  }
 
-    #welcome-container h2 {
-        font-size: 1.2em; 
-        line-height: 1.4;
-        margin: 10px 0;
-    }
+  #welcome-container h2{
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 10px 0;
+  }
 }
 
 /* TIMELINE SECTION */
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
+.timeline{
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.timeline-container {
-    padding: 10px;
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+.timeline-container{
+  padding: 10px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.timeline-item {
-    position: relative;
-    padding: 20px 0;
-    border-left: 2px solid #f48fb1;
+.timeline-item{
+  position: relative;
+  padding: 20px 0;
+  border-left: 2px solid var(--accentSoft);
 }
 
-/* hide by making same color as background */
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    left: -6px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #f48fb1;
-    top: 0;
-    transform: translateY(10px);
+.timeline-item::after{
+  content: '';
+  position: absolute;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accentSoft);
+  top: 0;
+  transform: translateY(10px);
 }
 
-.timeline-content {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.timeline-content{
+  background-color: var(--card);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px var(--shadow);
 }
 
-.timeline-content h2 {
-    margin-top: 0;
-    color: #e91e63;
+.timeline-content h2{
+  margin-top: 0;
+  color: var(--accent);
 }
 
-.timeline-content p {
-    margin: 0;
+.timeline-content p{
+  margin: 0;
 }
 
-.timeline-details {
-    display: none; /* Hide all details by default */
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
-    border-radius: 0 0 5px 5px;
+.timeline-details{
+  display: none; /* Hide all details by default */
+  padding: 10px;
+  background-color: var(--card2);
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
 }
 
-.timeline-details h2 {
-    margin-bottom: 0px;
+.timeline-details h2{
+  margin-bottom: 0px;
 }
 
-.interactive-timeline .timeline-details {
-    display: none;
-    background-color: #fce4ec;
-    padding: 10px;
-    border: 1px solid #f48fb1;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
+.interactive-timeline .timeline-details{
+  display: none;
+  background-color: var(--bg);
+  padding: 10px;
+  border: 1px solid var(--accentSoft);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px var(--shadow);
+  margin-top: 10px;
 }
 
-/* necessary for showDetails() to work */
-.timeline-item:hover .timeline-details {
-    display: block;
+/* necessary for showDetails() hover version */
+.timeline-item:hover .timeline-details{
+  display: block;
 }
 
-p {
-    font-size: 18px;
-    margin-bottom: 0px;
+p{
+  font-size: 18px;
+  margin-bottom: 0px;
 }
 
-.off-the-clock {
-    text-align: center;
-    padding: 20px;
+.off-the-clock{
+  text-align: center;
+  padding: 20px;
 }
 
-.off-the-clock .clock img {
-    width: 100px;
-    animation: rotateClock 10s linear infinite;
+.off-the-clock .clock img{
+  width: 100px;
+  animation: rotateClock 10s linear infinite;
 }
 
 /* clock animation */
-@keyframes rotateClock {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+@keyframes rotateClock{
+  0%{ transform: rotate(0deg); }
+  100%{ transform: rotate(360deg); }
 }
 
 /* Base styles for mobile first */
-#clock-container {
-    padding: 0px;
-    text-align: center; 
+#clock-container{
+  padding: 0px;
+  text-align: center;
 }
 
-#clock-container h2 {
-    font-size: 1.2em;
-    margin: 10px 0;
+#clock-container h2{
+  font-size: 1.2em;
+  margin: 10px 0;
 }
 
 /* Adjustments for tablets and larger screens */
-@media (min-width: 768px) {
-    #clock-container {
-        padding: 30px;
-    }
+@media (min-width: 768px){
+  #clock-container{
+    padding: 30px;
+  }
 
-    #clock-container h2 {
-        font-size: 1.5em;
-    }
+  #clock-container h2{
+    font-size: 1.5em;
+  }
 }
 
-@media (min-width: 1024px) {
-    #clock-container {
-        padding: 20px;
-    }
+@media (min-width: 1024px){
+  #clock-container{
+    padding: 20px;
+  }
 
-    #clock-container h2 {
-        font-size: 1.2em; 
-        line-height: 1.4;
-        margin: 10px 0;
-    }
+  #clock-container h2{
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 10px 0;
+  }
 }
 
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+footer{
+  background-color: var(--header);
+  color: var(--navText);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
-
