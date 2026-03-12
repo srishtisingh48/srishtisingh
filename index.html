@@ -3,194 +3,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>srishti singh's portfolio</title>
+    <title>Srishti Singh | Portfolio</title>
+    <meta name="description" content="Srishti Singh's pink space-themed portfolio.">
     <link rel="stylesheet" href="index.css">
-    <!-- found on google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- create the top navigation bar -->
-        <nav>
-            <ul class="navbar">
-                <li><a href="#about">who am i?</a></li>
-                <li><a href="#timeline">timeline</a></li>
-                <li><a href="#fun">off the clock</a></li>
-                <li>
-                  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">
-                    🌙
-                  </button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- the about aka who am i section -->
-    <section id="about">
-        <h1>👩‍💻 WHO AM I? 👩‍💻</h1>
-        <div id="welcome-container">
-            <h2>hi! i’m srishti singh 🌟, a computer science student at the university of washington 🎓 who loves building tools that have a meaningful impact.</h2>
-            <h2> i am currently especially excited about robotics. i am part of the <a href="https://hcrlab.cs.washington.edu/" target="_blank">human-centered robotics lab</a>, where i am working on shared autonomy. </h2>
-            <h2>this summer, i interned at <a href="https://www.uber.com/" target="_blank">uber</a> where i worked on the earner loyalty team, helping build backend systems for driver rewards 🚗. last summer, i was at <a href="https://www.quadranttechnologies.com/" target="_blank">quadrant technologies</a>, where i co-developed <strong>vamsa</strong> — an app designed to help families stay connected through stories and culture 🪔.</h2>
-            <h2>i have experience designing and developing meaningful applications 🌍, mentoring young coders 👩‍🏫, and encouraging others to bring their ideas to life 💡.
-                when it comes to code, i love working with front-end tools like html, css, javascript, and react. i’m just as excited about backend languages like java, c#, and python 💻.</h2>
-            <h2>check out my work on <a href="https://github.com/srishtisingh48" target="_blank">github</a>, and feel free to email me at <a href="mailto:ssingh48@uw.edu">ssingh48@uw.edu</a>.
-                also, connect with me on <a href="https://www.linkedin.com/in/srishtisingh48/" target="_blank">linkedin</a>!</h2>
+    <div class="site-shell">
+        <div class="stars stars-one"></div>
+        <div class="stars stars-two"></div>
+        <div class="constellation constellation-one" aria-hidden="true">
+            <span class="star-node node-a"></span>
+            <span class="star-node node-b"></span>
+            <span class="star-node node-c"></span>
+            <span class="star-node node-d"></span>
+            <span class="star-link link-ab"></span>
+            <span class="star-link link-bc"></span>
+            <span class="star-link link-cd"></span>
         </div>
-    </section>
-    
-    <!-- the timeline section -->
-    <section id="timeline">
-        <h1>💡 TIMELINE 💡</h1>
-            <h2>hover or click on each season to see more details!</h2>
-        <div class="timeline">
-            <div class="timeline-item" onclick="showDetails('fall3')">
-                <div class="timeline-content">
-                    <h2>Fall 2025</h2>
-                    <p>deep dives, teaching, and research 🌰</p>
-                </div>
-                <div id="fall3" class="timeline-details">
-                    <h2>teaching assistant for computer security 🔐</h2>
-                    <p>supported students in understanding real-world security vulnerabilities, from buffer overflows and memory corruption to web exploits and cryptography, while leading labs and office hours focused on hands-on learning.</p>
-                     <h2>undergraduate researcher 🤖</h2>
-                    <p>conducted research in human-centered robotics, exploring shared autonomy and intuitive human–robot interaction through ROS-based systems, assistive robots, and interactive interfaces.</p>
-                </div>
-            </div>
-
-        <div class="timeline">
-            <div class="timeline-item" onclick="showDetails('summer3')">
-                <div class="timeline-content">
-                    <h2>Summer 2025</h2>
-                    <p>growing, building, and learning ☀️</p>
-                </div>
-                <div id="summer3" class="timeline-details">
-                    <h2>software engineering internship at uber 🚗</h2>
-                    <p>worked on the earner loyalty team, helping build backend systems that support driver rewards and engagement.</p>
-                </div>
-            </div>
-
-        <div class="timeline">
-            <div class="timeline-item" onclick="showDetails('spring2')">
-                <div class="timeline-content">
-                    <h2>SPRING 2025</h2>
-                    <p>building and wrapping things up 🌸</p>
-                </div>
-                <div id="spring2" class="timeline-details">
-                    <h2>created an alumni database 🗂️</h2>
-                    <p>worked with the tech committee in phi chi theta to build out a full-stack alumni database that helps current members stay connected with past graduates.</p>
-
-                    <h2>finished the com2 podcast series 🎙️</h2>
-                    <p>wrapped up the podcast season with episodes featuring professors from the allen school — it was so rewarding to see the full series come together on <a href="https://open.spotify.com/show/2oUIVUYdd3HuduQTBKiUeC" target="_blank">spotify</a>!</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" onclick="showDetails('winter2')">
-                <div class="timeline-content">
-                    <h2>WINTER 2025</h2>
-                    <p>leveling up and looking ahead ❄️</p>
-                </div>
-                <div id="winter2" class="timeline-details">
-                    <h2>began my term as vp of phi chi theta 💼</h2>
-                    <p>created our first tech committee and started mentoring two amazing students (my littles!) — so proud to support them.</p>
-
-                    <h2>launched the com2 podcast 🎙️</h2>
-                    <p>interviewed 3 professors in the paul allen school and got our episodes up on <a href="https://open.spotify.com/show/2oUIVUYdd3HuduQTBKiUeC" target="_blank">spotify</a>!</p>
-
-                    <h2>organized a TA panel 💬</h2>
-                    <p>brought together current TAs to give insight and advice to students interested in becoming a TA.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" onclick="showDetails('fall2')">
-                <div class="timeline-content">
-                    <h2>FALL 2024</h2>
-                    <p>leading with purpose 🍁</p>
-                </div>
-                <div id="fall2" class="timeline-details">
-                    <h2>elected as vp of phi chi theta 🗳️</h2>
-                    <p>took on a bigger leadership role in my business organization, excited to help our chapter grow.</p>
-
-                    <h2>presented musicmatch to cseed cohort 1 🎶</h2>
-                    <p>had the chance to share my project and journey to the incoming cseed cohort, helping inspire the next wave of innovators!</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" onclick="showDetails('summer1')">
-                <div class="timeline-content">
-                    <h2>SUMMER 2024</h2>
-                    <p>summer breakthroughs and learning experiences ☀️</p>
-                </div>
-                <div id="summer1" class="timeline-details">
-                    <h2>internship at quadrant technologies 🚀</h2>
-                    <p>had an amazing summer internship where i designed, developed, and launched vamsa, an impactful app for cultural connection and heritage preservation using tools like react native and azure sql.</p>
-
-                    <h2>ai courses through ibm 💡</h2>
-                    <p>took multiple ai courses focusing on building advanced generative ai applications and chatbots with python and flask.</p>
-
-                    <h2>ai engineering workshop 🛠️</h2>
-                    <p>built ai workflows and boosted model performance with openai's fine-tuning api. it was very informative and fast-paced.</p>
-
-                    <h2>created an emotion detector 🤖</h2>
-                    <p>developed and deployed an app using watson nlp and flask to analyze text feedback into six distinct emotions.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" onclick="showDetails('spring1')">
-                <div class="timeline-content">
-                    <h2>SPRING 2024</h2>
-                    <p>new roles 🌷</p>
-                </div>
-                <div id="spring1" class="timeline-details">
-                    <h2>became an officer of com squared 💼</h2>
-                    <p>took on a leadership role and organized career talks and networking events, helping fellow students in the allen school of cs.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" onclick="showDetails('winter1')">
-                <div class="timeline-content">
-                    <h2>WINTER 2023</h2>
-                    <p>key milestones ⛄</p>
-                </div>
-                <div id="winter1" class="timeline-details">
-                    <h2>got into phi chi theta 🎉</h2>
-                    <p>joined this amazing business fraternity, diving into professional development and making connections with incredible people!</p>
-                    <h2>part of cseed cohort 0 🎶</h2>
-                    <p>created musicmatch, an app that connects people based on their music taste. used python, html, css, and javascript, spotify apis, and even managed it on aws ec2.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" onclick="showDetails('fall1')">
-                <div class="timeline-content">
-                    <h2>FALL 2023</h2>
-                    <p>my journey at the university of washington began 🍂</p>
-                </div>
-                <div id="fall1" class="timeline-details">
-                    <h2>inrix + aws hackathon 🎖️</h2>
-                    <p>earned an honorary mention for the ai-powered system for optimizing speed limits and congestion project.</p>
-                </div>
-            </div>
-
+        <div class="constellation constellation-two" aria-hidden="true">
+            <span class="star-node node-e"></span>
+            <span class="star-node node-f"></span>
+            <span class="star-node node-g"></span>
+            <span class="star-link link-ef"></span>
+            <span class="star-link link-fg"></span>
         </div>
-    </section>
+        <div class="nebula nebula-left"></div>
+        <div class="nebula nebula-right"></div>
 
-    <!-- the fun aka off the clock section -->
-    <section id="fun">
-        <div class="off-card">
-              <h1 class="off-title">🎀 OFF THE CLOCK 🎀</h1>
-            
-              <ul class="off-list">
-                <li><span class="emoji">🏊‍♀️</span> swimming, lifeguarding, swim instructing</li>
-                <li><span class="emoji">📺</span> watching my favorite tv show <em>Friends</em></li>
-                <li><span class="emoji">📚</span> reading psychological thrillers (Freida McFadden)</li>
-                <li><span class="emoji">💪</span> going to the gym</li>
-                <li><span class="emoji">☕</span> drinking coffee</li>
-              </ul>
-        </div>
-    </section>
+        <header class="header">
+            <nav class="navbar">
+                <a class="brand" href="#top">ss</a>
+                <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+                    menu
+                </button>
+                <div id="navLinks" class="nav-links">
+                    <a href="#top">home</a>
+                    <a href="#about">about</a>
+                    <a href="#timeline">timeline</a>
+                    <a href="#projects">projects</a>
+                    <a href="#fun">off the clock</a>
+                    <a href="#contact">contact</a>
+                </div>
+            </nav>
+        </header>
 
-    <footer>
-        <p>© 2024 Srishti Singh. All rights reserved.</p>
-    </footer>
+        <main id="top">
+            <div class="comet comet-one"></div>
+            <div class="comet comet-two"></div>
+            <section class="hero section">
+                <div class="hero-copy reveal">
+                    <h1 class="hero-title" data-text="hi, i'm srishti singh.">
+                        <span class="type-cursor" id="heroTypewriter" data-text="hi, i'm srishti singh.">hi, i'm srishti singh.</span>
+                    </h1>
+                    <p class="hero-lead">
+                        a computer science student at the university of washington who loves building tools that have a meaningful impact.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#timeline">see my timeline</a>
+                        <a class="button button-secondary" href="mailto:ssingh48@uw.edu">email me</a>
+                        <a class="button button-secondary" href="https://drive.google.com/file/d/1dWpC_0O1QivxCNptPeze-fns3W51GMRS/view?usp=sharing" target="_blank" rel="noreferrer">resume</a>
+                    </div>
+                    <div class="hero-metrics">
+                        <article class="metric-card">
+                            <span class="metric-value">Uber 🚗</span>
+                            <span class="metric-label">software engineering intern</span>
+                        </article>
+                        <article class="metric-card">
+                            <span class="metric-value">HCR Lab 🤖</span>
+                            <span class="metric-label">shared autonomy research</span>
+                        </article>
+                        <article class="metric-card">
+                            <span class="metric-value">UW 💻</span>
+                            <span class="metric-label">computer science</span>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="hero-panel reveal">
+                    <div class="orbit-card">
+                        <div class="portrait-orbit orbit-a"></div>
+                        <div class="portrait-orbit orbit-b"></div>
+                        <div class="portrait-frame">
+                            <img class="hero-portrait" src="srishti.jpg" alt="Portrait of Srishti Singh">
+                        </div>
+                        <div class="portrait-caption">
+                            <span>Seattle, WA</span>
+                            <strong>building thoughtful software + ML systems</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">about</p>
+                    <h2><span class="emoji-lock">👩‍💻 who am i? 👩‍💻</span></h2>
+                </div>
+                <div class="about-grid">
+                    <article class="glass-card reveal">
+                        <p>hi! i’m srishti singh 🌟, a computer science student at the university of washington 🎓 majoring in computer science and minoring in business administration.</p>
+                        <p>right now i’m especially excited by backend systems, machine learning, and human-robot interaction. i’m an undergraduate researcher in the <a href="https://hcrlab.cs.washington.edu/" target="_blank" rel="noreferrer">human-centered robotics lab</a>, where i work on shared autonomy with stretch and design natural language-based robot assistance 🤖.</p>
+                        <p>most recently, i interned at <a href="https://www.uber.com/" target="_blank" rel="noreferrer">uber</a>, where i worked on loyalty infrastructure for driver discounts and rewards 🚗. i also work as a campus partner for perplexity and previously interned at <a href="https://www.quadranttechnologies.com/" target="_blank" rel="noreferrer">quadrant technologies</a>, where i led front-end development for <strong>vamsa</strong> 🪔.</p>
+                        <p>i like building systems that are useful, rigorous, and easy to use, whether that means production backend workflows, full-stack student tools, or ml projects built from scratch 💡. i also care a lot about teaching and mentorship, which is why ta work and mentoring younger students have both been a big part of my path 👩‍🏫.</p>
+                        <p>check out my work on <a href="https://github.com/srishtisingh48" target="_blank" rel="noreferrer">github</a>, feel free to email me at <a href="mailto:ssingh48@uw.edu">ssingh48@uw.edu</a>, and connect with me on <a href="https://www.linkedin.com/in/srishtisingh48/" target="_blank" rel="noreferrer">linkedin</a>.</p>
+                    </article>
+
+                    <article class="glass-card reveal">
+                        <h3>skills + tools</h3>
+                        <div class="chip-group">
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>C++</span>
+                            <span>C#</span>
+                            <span>TypeScript</span>
+                            <span>SQL</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>ROS</span>
+                            <span>Flask</span>
+                            <span>Express.js</span>
+                            <span>AWS EC2</span>
+                            <span>Azure DevOps</span>
+                            <span>Docker</span>
+                            <span>Linux</span>
+                            <span>PyTorch</span>
+                            <span>OAuth</span>
+                            <span>REST APIs</span>
+                            <span>PostgreSQL</span>
+                            <span>Azure SQL</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="timeline" class="section">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">timeline</p>
+                    <h2><span class="emoji-lock">💡 my academic journey 💡</span></h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item glass-card reveal" tabindex="0">
+                        <div class="timeline-meta">
+                            <span>Fall 2025</span>
+                            <p class="timeline-summary">teaching + research 🌰</p>
+                        </div>
+                        <div class="timeline-body">
+                            <button class="timeline-toggle" type="button" aria-expanded="false">View details</button>
+                            <div class="detail-stack">
+                                <h3>teaching assistant for computer security</h3>
+                                <p>teach weekly sessions, labs, and office hours on binary exploitation, memory corruption, web vulnerabilities, cryptography, buffer overflows, format strings, and heap exploits.</p>
+                                <h3>undergraduate researcher</h3>
+                                <p>conduct research on shared autonomy with the stretch assistive robot using ros, rviz, and web interfaces to explore language-based corrections and confidence-driven assistance.</p>
+                                <h3>campus partner at perplexity</h3>
+                                <p>spearheaded launch efforts for perplexity's comet browser on campus through training, onboarding, and feedback loops that increased adoption.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item glass-card reveal" tabindex="0">
+                        <div class="timeline-meta">
+                            <span>Summer 2025</span>
+                            <p class="timeline-summary">building at scale ☀️</p>
+                        </div>
+                        <div class="timeline-body">
+                            <button class="timeline-toggle" type="button" aria-expanded="false">View details</button>
+                            <div class="detail-stack">
+                                <h3>software engineering internship at uber</h3>
+                                <p>led migration of driver rewards functionality into the loyalty service, improving service ownership and reducing cross-team dependencies.</p>
+                                <p>designed and implemented backend workflows for driver discounts, integrating upside apis and internal services for eligibility, location validation, payment linking, and redemption in production.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item glass-card reveal" tabindex="0">
+                        <div class="timeline-meta">
+                            <span>Spring 2025</span>
+                            <p class="timeline-summary">shipping and wrapping up 🌸</p>
+                        </div>
+                        <div class="timeline-body">
+                            <button class="timeline-toggle" type="button" aria-expanded="false">View details</button>
+                            <div class="detail-stack">
+                                <h3>created an alumni database</h3>
+                                <p>worked with the tech committee in phi chi theta to build out a full-stack alumni database that helps current members stay connected with past graduates.</p>
+                                <h3>finished the com2 podcast series</h3>
+                                <p>wrapped up the podcast season with episodes featuring professors from the allen school - it was so rewarding to see the full series come together on <a href="https://open.spotify.com/show/2oUIVUYdd3HuduQTBKiUeC" target="_blank" rel="noreferrer">spotify</a>.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item glass-card reveal" tabindex="0">
+                        <div class="timeline-meta">
+                            <span>Winter 2025</span>
+                            <p class="timeline-summary">leadership and momentum ❄️</p>
+                        </div>
+                        <div class="timeline-body">
+                            <button class="timeline-toggle" type="button" aria-expanded="false">View details</button>
+                            <div class="detail-stack">
+                                <h3>began my term as vp of phi chi theta</h3>
+                                <p>created our first tech committee and started mentoring two amazing students (my littles!) - so proud to support them.</p>
+                                <h3>launched the com2 podcast</h3>
+                                <p>interviewed 3 professors in the paul allen school and got our episodes up on <a href="https://open.spotify.com/show/2oUIVUYdd3HuduQTBKiUeC" target="_blank" rel="noreferrer">spotify</a>.</p>
+                                <h3>organized a ta panel</h3>
+                                <p>brought together current tas to give insight and advice to students interested in becoming a ta.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item glass-card reveal" tabindex="0">
+                        <div class="timeline-meta">
+                            <span>Fall 2024</span>
+                            <p class="timeline-summary">stepping into leadership 🍁</p>
+                        </div>
+                        <div class="timeline-body">
+                            <button class="timeline-toggle" type="button" aria-expanded="false">View details</button>
+                            <div class="detail-stack">
+                                <h3>elected as vp of phi chi theta</h3>
+                                <p>took on a bigger leadership role in my business organization, excited to help our chapter grow.</p>
+                                <h3>presented musicmatch to cseed cohort 1</h3>
+                                <p>had the chance to share my project and journey to the incoming cseed cohort, helping inspire the next wave of innovators!</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item glass-card reveal" tabindex="0">
+                        <div class="timeline-meta">
+                            <span>Summer 2024</span>
+                            <p class="timeline-summary">internships and ai builds ☀️</p>
+                        </div>
+                        <div class="timeline-body">
+                            <button class="timeline-toggle" type="button" aria-expanded="false">View details</button>
+                            <div class="detail-stack">
+                                <h3>internship at quadrant technologies</h3>
+                                <p>led front-end development for vamsa, a production web and ios app using react native, and built ci/cd pipelines with azure devops while collaborating cross-functionally to reduce delivery timelines.</p>
+                                <h3>ai courses through ibm</h3>
+                                <p>took multiple ai courses focusing on building advanced generative ai applications and chatbots with python and flask.</p>
+                                <h3>ai engineering workshop</h3>
+                                <p>worked with openai fine-tuning and ai workflows through an intensive ai engineering workshop.</p>
+                                <h3>created an emotion detector</h3>
+                                <p>developed and deployed an app using watson nlp and flask to analyze text feedback into six distinct emotions.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item glass-card reveal" tabindex="0">
+                        <div class="timeline-meta">
+                            <span>Spring 2024</span>
+                            <p class="timeline-summary">new leadership roles 🌷</p>
+                        </div>
+                        <div class="timeline-body">
+                            <button class="timeline-toggle" type="button" aria-expanded="false">View details</button>
+                            <div class="detail-stack">
+                                <h3>became an officer of com squared</h3>
+                                <p>took on a leadership role and organized career talks and networking events, helping fellow students in the allen school of cs.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item glass-card reveal" tabindex="0">
+                        <div class="timeline-meta">
+                            <span>Winter 2023</span>
+                            <p class="timeline-summary">early milestones ⛄</p>
+                        </div>
+                        <div class="timeline-body">
+                            <button class="timeline-toggle" type="button" aria-expanded="false">View details</button>
+                            <div class="detail-stack">
+                                <h3>got into phi chi theta</h3>
+                                <p>joined this amazing business fraternity, diving into professional development and making connections with incredible people!</p>
+                                <h3>part of cseed cohort 0</h3>
+                                <p>created musicmatch, an app that connects people based on their music taste. used python, html, css, and javascript, spotify apis, and even managed it on aws ec2.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item glass-card reveal" tabindex="0">
+                        <div class="timeline-meta">
+                            <span>Fall 2023</span>
+                            <p class="timeline-summary">the start at uw 🍂</p>
+                        </div>
+                        <div class="timeline-body">
+                            <button class="timeline-toggle" type="button" aria-expanded="false">View details</button>
+                            <div class="detail-stack">
+                                <h3>inrix + aws hackathon</h3>
+                                <p>earned an honorary mention for the ai-powered system for optimizing speed limits and congestion project.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">projects</p>
+                    <h2>things i've built</h2>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card glass-card reveal" tabindex="0">
+                        <div class="project-media">
+                            <img src="vamsa_project.png" alt="Preview of the Vamsa project interface">
+                        </div>
+                        <span class="project-tag">mobile + web</span>
+                        <h3>Vamsa</h3>
+                        <p class="project-summary">Production web and iOS product work with React Native and release pipeline ownership.</p>
+                        <div class="project-hover-copy">
+                            <p>Led front-end development for a production web and iOS app at Quadrant Technologies using React Native, and built Azure DevOps CI/CD pipelines to ship features faster across teams.</p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card reveal" tabindex="0">
+                        <div class="project-media">
+                            <img src="neural_network.png" alt="Visualization from the Neural Networks and Kernel Methods project">
+                        </div>
+                        <span class="project-tag">machine learning</span>
+                        <h3>Neural Networks & Kernel Methods</h3>
+                        <p class="project-summary">From-scratch ML implementations focused on the core math, optimization, and training loops.</p>
+                        <div class="project-hover-copy">
+                            <p>Built neural networks and optimization algorithms from scratch, including forward and backpropagation, sgd, logistic regression, lasso, and kernel regression.</p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card reveal" tabindex="0">
+                        <div class="project-media">
+                            <img src="inrix.png" alt="Preview image from the INRIX and AWS Hackathon project">
+                        </div>
+                        <span class="project-tag">hackathon</span>
+                        <h3>INRIX + AWS Hackathon</h3>
+                        <p class="project-summary">A 24-hour traffic intelligence build that turned mobility data into fast ML predictions.</p>
+                        <div class="project-hover-copy">
+                            <p>Built an ai-powered traffic prediction system in 24 hours using neural networks and the segmentspeed inrix api, earning an honorary mention among 300+ participants.</p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card reveal" tabindex="0">
+                        <div class="project-media">
+                            <img src="network.png" alt="Preview graphic for the socket programming protocol project">
+                        </div>
+                        <span class="project-tag">networks</span>
+                        <h3>Socket Programming Protocol</h3>
+                        <p class="project-summary">A low-level networking project implementing reliable communication across custom UDP and TCP stages.</p>
+                        <div class="project-hover-copy">
+                            <p>Built a socket-based client and multithreaded server that implemented a strict multi-stage protocol with custom packet headers, retransmissions, acknowledgments, padding rules, timeouts, and both UDP and TCP communication.</p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card reveal" tabindex="0">
+                        <div class="project-media">
+                            <img src="music.png" alt="Preview of the Music Match web application">
+                        </div>
+                        <span class="project-tag">web app</span>
+                        <h3>Music Match</h3>
+                        <p class="project-summary">A social matching app that uses listening data to connect people through music taste.</p>
+                        <div class="project-hover-copy">
+                            <p>Built a web application that matches people based on music taste, deployed on aws ec2 with linux and apache, with spotify oauth integration for listening data.</p>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card reveal" tabindex="0">
+                        <div class="project-media">
+                            <img src="emotion.png" alt="Preview of the Emotion Detector application">
+                        </div>
+                        <span class="project-tag">nlp app</span>
+                        <h3>Emotion Detector</h3>
+                        <p class="project-summary">An NLP workflow that turns open-ended feedback into structured emotional signals.</p>
+                        <div class="project-hover-copy">
+                            <p>Built and deployed a watson nlp and flask application that classifies text feedback into six emotions with prompt engineering, error handling, and static analysis.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="fun" class="section">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">off the clock</p>
+                    <h2>outside of work</h2>
+                </div>
+                <div class="fun-grid">
+                    <article class="glass-card reveal">
+                        <h3>when i'm not coding</h3>
+                        <ul class="fun-list">
+                            <li>🏊‍♀️ swimming, lifeguarding, and swim instructing</li>
+                            <li>📺 watching my favorite tv show <em>Friends</em></li>
+                            <li>📚 reading psychological thrillers (freida mcfadden)</li>
+                            <li>💪 going to the gym</li>
+                            <li>☕ drinking coffee</li>
+                        </ul>
+                    </article>
+                    <article class="glass-card reveal">
+                        <h3>what i like most</h3>
+                        <p>i am happiest when i get to combine technical depth, product thinking, and people-focused impact, which is probably why research, backend systems, mentorship, and teaching all keep pulling me in.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact" class="footer reveal">
+            <div>
+                <p class="eyebrow">contact</p>
+                <h2>Let's build something meaningful.</h2>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:ssingh48@uw.edu">ssingh48@uw.edu</a>
+                <a href="https://github.com/srishtisingh48" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/srishtisingh48/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
 
     <script src="index.js"></script>
 </body>
